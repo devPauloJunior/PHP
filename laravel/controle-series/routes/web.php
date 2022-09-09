@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('ola', function () {
+    echo '<h1>Olá Mundo</h1>';
+});
