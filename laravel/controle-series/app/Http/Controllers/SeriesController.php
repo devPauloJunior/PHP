@@ -12,11 +12,7 @@ class SeriesController extends Controller
             'Demolidor',
             'Loki'
         ];
-        $html = '<ul>';
-        foreach ($series as $serie) {
-            $html .= "<li>$serie</li>";
-        }
-        $html .= '<ul>';
-        return $html;
+        
+        return view('Listar-series', compact(var_name:'series'));
     }
 }
