@@ -13,6 +13,6 @@ class SeriesController extends Controller
             'Loki'
         ];
         
-        return view('Listar-series', compact(var_name:'series'));
+        return view('Listar-series')->with('series', $series);
     }
 }
