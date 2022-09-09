@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SeriesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('ola', function () {
-    echo '<h1>Olá Mundo</h1>';
-});
+Route::get('/series', [SeriesController::class, 'listarSeries']);
