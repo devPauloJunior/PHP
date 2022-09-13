@@ -13,6 +13,6 @@ class SeriesController extends Controller
             'Loki'
         ];
         
-        return view('Listar-series')->with('series', $series);
+        return view('series.index')->with('series', $series);
     }
 }
