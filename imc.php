@@ -4,7 +4,7 @@ $peso = 73;
 $altura = 1.70;
 $imc = $peso/$altura ** 2;
 
-echo "Seu IMC é de $imc. Você está com IMC "; 
+echo "Seu IMC é de $imc . Você está com IMC "; 
 
 if ($imc < 18) {
     echo "Abaixo";
