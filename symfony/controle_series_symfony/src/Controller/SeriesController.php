@@ -22,4 +22,9 @@ class SeriesController extends AbstractController
             'seriesList' => $seriesList,
         ]);
     }
-}
+
+    #[Route('/series/create', methods:['GET'])]
+    public function addSeriesForm():Response 
+    {
+        return $this->render(view:'series/form.html.twig');
+    }
